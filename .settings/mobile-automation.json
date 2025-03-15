@@ -1,0 +1,189 @@
+{
+  "GenerateCrossPlatformAttributes": false,
+  "GenerateSelectorsForInnerElements": true,
+  "Connections": [
+    {
+      "Name": "Andriod_Platform",
+      "Description": null,
+      "Url": "https://smes:dcd37053-f1e4-4253-b454-ce4f7b55d8bf@ondemand.eu-central-1.saucelabs.com:443/wd/hub",
+      "PlatformName": "Android",
+      "PlatformVersion": "13",
+      "DeviceName": "Samsung Galaxy A53 5G",
+      "SingleInstance": null,
+      "WaitForPageUpdate": true,
+      "Capabilities": {
+        "sauce: options": "\"{\"appiumVersion\":\"2.11.0\"}\"",
+        "app": "storage:filename=NetSfere.apk",
+        "newCommandTimeout": "0"
+      },
+      "GeoLocation": null,
+      "LoggingModel": {
+        "LoggingEnabled": true,
+        "VideoRecordingEnabled": false,
+        "RecordingTimeLimit": 600,
+        "VideoQuality": 1,
+        "CollectScreenshot": 0,
+        "CollectPageSource": 0
+      },
+      "HttpHeaders": {},
+      "CvServer": null,
+      "CvApiKey": null,
+      "CvUseLocalServer": false
+    },
+    {
+      "Name": "IOS EMulator",
+      "Description": null,
+      "Url": "https://smes:dcd37053-f1e4-4253-b454-ce4f7b55d8bf@ondemand.eu-central-1.saucelabs.com:443/wd/hub",
+      "PlatformName": "iOS",
+      "PlatformVersion": "18",
+      "DeviceName": "iPhone 13",
+      "SingleInstance": null,
+      "WaitForPageUpdate": true,
+      "Capabilities": {
+        "sauce:options": "{\"appiumVersion\":\"2.0.0\"}",
+        "app": "storage:filename=OPENPOINT_Test (2).ipa",
+        "newCommandTimeout": "0"
+      },
+      "GeoLocation": null,
+      "LoggingModel": {
+        "LoggingEnabled": true,
+        "VideoRecordingEnabled": false,
+        "RecordingTimeLimit": 600,
+        "VideoQuality": 1,
+        "CollectScreenshot": 0,
+        "CollectPageSource": 0
+      },
+      "HttpHeaders": {},
+      "CvServer": null,
+      "CvApiKey": null,
+      "CvUseLocalServer": false
+    },
+    {
+      "Name": "test",
+      "Description": null,
+      "Url": "https://oauth-traininguipath2-b0e4d:9bab02c9-57af-45f9-a20c-42865c6ff81e@ondemand.eu-central-1.saucelabs.com:443/wd/hub",
+      "PlatformName": "Android",
+      "PlatformVersion": "14",
+      "DeviceName": "Samsung Galaxy S23 FE",
+      "SingleInstance": null,
+      "WaitForPageUpdate": true,
+      "Capabilities": {
+        "sauce: options": "{\"appiumVersion\":\"2.11.0\"}",
+        "app": "storage:filename=NetSfere (13).apk"
+      },
+      "GeoLocation": null,
+      "LoggingModel": {
+        "LoggingEnabled": true,
+        "VideoRecordingEnabled": false,
+        "RecordingTimeLimit": 600,
+        "VideoQuality": 1,
+        "CollectScreenshot": 0,
+        "CollectPageSource": 0
+      },
+      "HttpHeaders": {},
+      "CvServer": null,
+      "CvApiKey": null,
+      "CvUseLocalServer": false
+    },
+    {
+      "Name": "test",
+      "Description": null,
+      "Url": "https://oauth-bala1210.sqldba-e2d25:0fb2235e-015a-49fe-b95f-b3a896c15a4f@ondemand.eu-central-1.saucelabs.com:443/wd/hub",
+      "PlatformName": "Android",
+      "PlatformVersion": "14",
+      "DeviceName": "Samsung Galaxy S23 FE",
+      "SingleInstance": null,
+      "WaitForPageUpdate": true,
+      "Capabilities": {
+        "sauce:options": "{\"appiumVersion\":\"2.0.0\"}",
+        "newCommandTimeout": "0",
+        "app": "storage:filename=NetSfere.apk"
+      },
+      "GeoLocation": null,
+      "LoggingModel": {
+        "LoggingEnabled": true,
+        "VideoRecordingEnabled": false,
+        "RecordingTimeLimit": 600,
+        "VideoQuality": 1,
+        "CollectScreenshot": 0,
+        "CollectPageSource": 0
+      },
+      "HttpHeaders": {},
+      "CvServer": null,
+      "CvApiKey": null,
+      "CvUseLocalServer": false
+    }
+  ],
+  "Applications": [
+    {
+      "$id": "1",
+      "Name": "Chrome Browser_Andriod",
+      "Description": null,
+      "Type": "Web",
+      "Platforms": {
+        "Android": {
+          "Capabilities": {
+            "browserName": "Chrome"
+          },
+          "StartPage": "https://www.uipath.com/"
+        }
+      }
+    },
+    {
+      "$id": "2",
+      "Name": "The APP",
+      "Description": null,
+      "Type": "App",
+      "Platforms": {
+        "Android": {
+          "Capabilities": {
+            "app": "https://uipathtestappsto.blob.core.windows.net/testapps/TheApp.apk"
+          },
+          "StartPage": null
+        }
+      }
+    },
+    {
+      "$id": "3",
+      "Name": "browser_Safari",
+      "Description": null,
+      "Type": "Web",
+      "Platforms": {
+        "iOS": {
+          "Capabilities": {
+            "browserName": "Safari"
+          },
+          "StartPage": "https://www.uipath.com"
+        }
+      }
+    },
+    {
+      "$id": "4",
+      "Name": "netsref",
+      "Description": null,
+      "Type": "App",
+      "Platforms": {
+        "iOS": {
+          "Capabilities": {
+            "appium:app": "storage:filename=Northwell.ipa",
+            "bundleId": "edu.northwell.dpxapp"
+          },
+          "StartPage": null
+        },
+        "Android": {
+          "Capabilities": {
+            "app": "https://app.eu-central-1.saucelabs.com/app-management/groups/21021443",
+            "appActivity": "com.infinite.netsfere.view.SplashActivity",
+            "appPackage": "com.infinite.netsfere"
+          },
+          "StartPage": null
+        }
+      }
+    }
+  ],
+  "NormalizeSliderValue": false,
+  "IdsMaxAllowedLength": 40,
+  "LogsPath": "%TEMP%\\UiPath Mobile Automation Logs",
+  "Variables": {},
+  "HttpHeaders": {}
+}
